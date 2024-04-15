@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "RzF7iMDxe2kz4g4TFt/XgibIQp/q8aP4KPttaiO9pMxGg3ppI9SrOTBe1+i2yS2KhXWZFP1cISfbCKJOCTe3iA==",
+  "success": true,
+  "projectFilePath": "D:\\Cursos\\Desenvolvedor.io\\Kafka\\Produtor\\Produtor.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Missio\\.nuget\\packages\\confluent.kafka\\1.8.2\\confluent.kafka.1.8.2.nupkg.sha512",
+    "C:\\Users\\Missio\\.nuget\\packages\\librdkafka.redist\\1.8.2\\librdkafka.redist.1.8.2.nupkg.sha512",
+    "C:\\Users\\Missio\\.nuget\\packages\\system.memory\\4.5.0\\system.memory.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
