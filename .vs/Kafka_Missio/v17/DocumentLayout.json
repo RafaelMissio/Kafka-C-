@@ -1,12 +1,37 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Cursos\\Desenvolvedor.io\\Kafka\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E22ACD9F-E60B-4C93-B650-4B9EC3523977}|Produtor\\Produtor.csproj|d:\\cursos\\desenvolvedor.io\\kafka\\produtor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E22ACD9F-E60B-4C93-B650-4B9EC3523977}|Produtor\\Produtor.csproj|solutionrelative:produtor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Cursos\\Desenvolvedor.io\\Kafka\\Produtor\\Program.cs",
+              "RelativeDocumentMoniker": "Produtor\\Program.cs",
+              "ToolTip": "D:\\Cursos\\Desenvolvedor.io\\Kafka\\Produtor\\Program.cs*",
+              "RelativeToolTip": "Produtor\\Program.cs*",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-15T19:14:06.248Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
     }
   ]
 }

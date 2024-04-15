@@ -22,19 +22,19 @@
           }
         }
       },
-      "Confluent.Kafka/1.8.2": {
+      "Confluent.Kafka/2.3.0": {
         "type": "package",
         "dependencies": {
           "System.Memory": "4.5.0",
-          "librdkafka.redist": "1.8.2"
+          "librdkafka.redist": "2.3.0"
         },
         "compile": {
-          "lib/netcoreapp2.1/Confluent.Kafka.dll": {
+          "lib/net6.0/Confluent.Kafka.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/netcoreapp2.1/Confluent.Kafka.dll": {
+          "lib/net6.0/Confluent.Kafka.dll": {
             "related": ".xml"
           }
         }
@@ -77,7 +77,7 @@
           }
         }
       },
-      "librdkafka.redist/1.8.2": {
+      "librdkafka.redist/2.3.0": {
         "type": "package",
         "build": {
           "build/_._": {}
@@ -103,11 +103,19 @@
             "assetType": "native",
             "rid": "linux-x64"
           },
+          "runtimes/osx-arm64/native/librdkafka.dylib": {
+            "assetType": "native",
+            "rid": "osx-arm64"
+          },
           "runtimes/osx-x64/native/librdkafka.dylib": {
             "assetType": "native",
             "rid": "osx-x64"
           },
-          "runtimes/win-x64/native/libcrypto-1_1-x64.dll": {
+          "runtimes/win-x64/native/libcrypto-3-x64.dll": {
+            "assetType": "native",
+            "rid": "win-x64"
+          },
+          "runtimes/win-x64/native/libcurl.dll": {
             "assetType": "native",
             "rid": "win-x64"
           },
@@ -119,7 +127,7 @@
             "assetType": "native",
             "rid": "win-x64"
           },
-          "runtimes/win-x64/native/libssl-1_1-x64.dll": {
+          "runtimes/win-x64/native/libssl-3-x64.dll": {
             "assetType": "native",
             "rid": "win-x64"
           },
@@ -139,7 +147,11 @@
             "assetType": "native",
             "rid": "win-x64"
           },
-          "runtimes/win-x86/native/libcrypto-1_1.dll": {
+          "runtimes/win-x86/native/libcrypto-3.dll": {
+            "assetType": "native",
+            "rid": "win-x86"
+          },
+          "runtimes/win-x86/native/libcurl.dll": {
             "assetType": "native",
             "rid": "win-x86"
           },
@@ -151,7 +163,7 @@
             "assetType": "native",
             "rid": "win-x86"
           },
-          "runtimes/win-x86/native/libssl-1_1.dll": {
+          "runtimes/win-x86/native/libssl-3.dll": {
             "assetType": "native",
             "rid": "win-x86"
           },
@@ -1198,21 +1210,19 @@
         "lib/netstandard2.1/Avro.xml"
       ]
     },
-    "Confluent.Kafka/1.8.2": {
-      "sha512": "gUx1YnwMl19Sg/xOF5h9EQQkx31fcxdDW7LLPTEXbKQuXjvyvZONQsVbFFVCqetCB0tGEq/JKCmkdisIsOdV3g==",
+    "Confluent.Kafka/2.3.0": {
+      "sha512": "JSBXN/X7bBNS92bgZp82v1oT58kw9ndpKSGC5VgELeM/HgXUTssFkG3gEPEGd3cOIa5MMJSLe6+gYwzzjdAJPw==",
       "type": "package",
-      "path": "confluent.kafka/1.8.2",
+      "path": "confluent.kafka/2.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
-        "confluent.kafka.1.8.2.nupkg.sha512",
+        "confluent.kafka.2.3.0.nupkg.sha512",
         "confluent.kafka.nuspec",
-        "lib/net45/Confluent.Kafka.dll",
-        "lib/net45/Confluent.Kafka.xml",
-        "lib/net46/Confluent.Kafka.dll",
-        "lib/net46/Confluent.Kafka.xml",
-        "lib/netcoreapp2.1/Confluent.Kafka.dll",
-        "lib/netcoreapp2.1/Confluent.Kafka.xml",
+        "lib/net462/Confluent.Kafka.dll",
+        "lib/net462/Confluent.Kafka.xml",
+        "lib/net6.0/Confluent.Kafka.dll",
+        "lib/net6.0/Confluent.Kafka.xml",
         "lib/netstandard1.3/Confluent.Kafka.dll",
         "lib/netstandard1.3/Confluent.Kafka.xml",
         "lib/netstandard2.0/Confluent.Kafka.dll",
@@ -1247,10 +1257,10 @@
         "lib/netstandard2.0/Confluent.SchemaRegistry.Serdes.Avro.xml"
       ]
     },
-    "librdkafka.redist/1.8.2": {
-      "sha512": "8NipuyiD21aJO9kKv9FHzBbcHpWkquq+n/MpwLIm0Aac/+quRVyYIEYAa7hfcFfCdnjiBeMZxGblnBIzw5X6RQ==",
+    "librdkafka.redist/2.3.0": {
+      "sha512": "pH5zFZ0S56Wl6UfRkmDJN2AjHlPdVxlTskncFnL27LLGQuuY2dAU8YrZBkduBOws4tURS2TaTp1aPsY3qeJ0bw==",
       "type": "package",
-      "path": "librdkafka.redist/1.8.2",
+      "path": "librdkafka.redist/2.3.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1261,31 +1271,34 @@
         "build/native/include/librdkafka/rdkafka.h",
         "build/native/include/librdkafka/rdkafka_mock.h",
         "build/native/include/librdkafka/rdkafkacpp.h",
-        "build/native/lib/win/x64/win-x64-Release/v140/librdkafka.lib",
-        "build/native/lib/win/x64/win-x64-Release/v140/librdkafkacpp.lib",
-        "build/native/lib/win/x86/win-x86-Release/v140/librdkafka.lib",
-        "build/native/lib/win/x86/win-x86-Release/v140/librdkafkacpp.lib",
+        "build/native/lib/win/x64/win-x64-Release/v142/librdkafka.lib",
+        "build/native/lib/win/x64/win-x64-Release/v142/librdkafkacpp.lib",
+        "build/native/lib/win/x86/win-x86-Release/v142/librdkafka.lib",
+        "build/native/lib/win/x86/win-x86-Release/v142/librdkafkacpp.lib",
         "build/native/librdkafka.redist.targets",
-        "librdkafka.redist.1.8.2.nupkg.sha512",
+        "librdkafka.redist.2.3.0.nupkg.sha512",
         "librdkafka.redist.nuspec",
         "runtimes/linux-arm64/native/librdkafka.so",
         "runtimes/linux-x64/native/alpine-librdkafka.so",
         "runtimes/linux-x64/native/centos6-librdkafka.so",
         "runtimes/linux-x64/native/centos7-librdkafka.so",
         "runtimes/linux-x64/native/librdkafka.so",
+        "runtimes/osx-arm64/native/librdkafka.dylib",
         "runtimes/osx-x64/native/librdkafka.dylib",
-        "runtimes/win-x64/native/libcrypto-1_1-x64.dll",
+        "runtimes/win-x64/native/libcrypto-3-x64.dll",
+        "runtimes/win-x64/native/libcurl.dll",
         "runtimes/win-x64/native/librdkafka.dll",
         "runtimes/win-x64/native/librdkafkacpp.dll",
-        "runtimes/win-x64/native/libssl-1_1-x64.dll",
+        "runtimes/win-x64/native/libssl-3-x64.dll",
         "runtimes/win-x64/native/msvcp140.dll",
         "runtimes/win-x64/native/vcruntime140.dll",
         "runtimes/win-x64/native/zlib1.dll",
         "runtimes/win-x64/native/zstd.dll",
-        "runtimes/win-x86/native/libcrypto-1_1.dll",
+        "runtimes/win-x86/native/libcrypto-3.dll",
+        "runtimes/win-x86/native/libcurl.dll",
         "runtimes/win-x86/native/librdkafka.dll",
         "runtimes/win-x86/native/librdkafkacpp.dll",
-        "runtimes/win-x86/native/libssl-1_1.dll",
+        "runtimes/win-x86/native/libssl-3.dll",
         "runtimes/win-x86/native/msvcp140.dll",
         "runtimes/win-x86/native/vcruntime140.dll",
         "runtimes/win-x86/native/zlib1.dll",
@@ -3776,7 +3789,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "Confluent.Kafka >= 1.8.2",
+      "Confluent.Kafka >= 2.3.0",
       "Confluent.SchemaRegistry.Serdes.Avro >= 2.3.0"
     ]
   },
@@ -3831,7 +3844,7 @@
         "dependencies": {
           "Confluent.Kafka": {
             "target": "Package",
-            "version": "[1.8.2, )"
+            "version": "[2.3.0, )"
           },
           "Confluent.SchemaRegistry.Serdes.Avro": {
             "target": "Package",
@@ -3857,16 +3870,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: Confluent.Kafka from 2.3.0 to 1.8.2. Reference the package directly from the project to select a different version. \r\n Produtor -> Confluent.SchemaRegistry.Serdes.Avro 2.3.0 -> Confluent.Kafka (>= 2.3.0) \r\n Produtor -> Confluent.Kafka (>= 1.8.2)",
-      "libraryId": "Confluent.Kafka",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  }
 }

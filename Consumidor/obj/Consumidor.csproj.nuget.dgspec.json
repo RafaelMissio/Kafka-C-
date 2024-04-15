@@ -51,7 +51,7 @@
           "dependencies": {
             "Confluent.Kafka": {
               "target": "Package",
-              "version": "[1.8.2, )"
+              "version": "[2.3.0, )"
             },
             "Confluent.SchemaRegistry.Serdes.Avro": {
               "target": "Package",

@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "ypSsBTLk+N0z9mZ8/6JT1Xrr1TNja2ylrSB2ybC5jb/1SdbHIVDuYJ2uzGgAW9ny9h+ErJF6IiiPiGjWbDq01A==",
-  "success": false,
+  "dgSpecHash": "PnF/5Cg1kWedo7/kMnX6pf536k9c2PgBp0T++/IxjaMSChPSZfqdYzTJ5CuMvCBynl5zHUquFx/rGDh1KaUmdg==",
+  "success": true,
   "projectFilePath": "D:\\Cursos\\Desenvolvedor.io\\Kafka\\Consumidor\\Consumidor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Missio\\.nuget\\packages\\apache.avro\\1.11.0\\apache.avro.1.11.0.nupkg.sha512",
-    "C:\\Users\\Missio\\.nuget\\packages\\confluent.kafka\\1.8.2\\confluent.kafka.1.8.2.nupkg.sha512",
+    "C:\\Users\\Missio\\.nuget\\packages\\confluent.kafka\\2.3.0\\confluent.kafka.2.3.0.nupkg.sha512",
     "C:\\Users\\Missio\\.nuget\\packages\\confluent.schemaregistry\\2.3.0\\confluent.schemaregistry.2.3.0.nupkg.sha512",
     "C:\\Users\\Missio\\.nuget\\packages\\confluent.schemaregistry.serdes.avro\\2.3.0\\confluent.schemaregistry.serdes.avro.2.3.0.nupkg.sha512",
-    "C:\\Users\\Missio\\.nuget\\packages\\librdkafka.redist\\1.8.2\\librdkafka.redist.1.8.2.nupkg.sha512",
+    "C:\\Users\\Missio\\.nuget\\packages\\librdkafka.redist\\2.3.0\\librdkafka.redist.2.3.0.nupkg.sha512",
     "C:\\Users\\Missio\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.1\\microsoft.netcore.platforms.1.1.1.nupkg.sha512",
     "C:\\Users\\Missio\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\Missio\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
@@ -70,15 +70,5 @@
     "C:\\Users\\Missio\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\Missio\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "NU1605",
-      "level": "Error",
-      "message": "Warning As Error: Detected package downgrade: Confluent.Kafka from 2.3.0 to 1.8.2. Reference the package directly from the project to select a different version. \r\n Consumidor -> Confluent.SchemaRegistry.Serdes.Avro 2.3.0 -> Confluent.Kafka (>= 2.3.0) \r\n Consumidor -> Confluent.Kafka (>= 1.8.2)",
-      "libraryId": "Confluent.Kafka",
-      "targetGraphs": [
-        "net8.0"
-      ]
-    }
-  ]
+  "logs": []
 }
